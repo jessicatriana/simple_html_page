@@ -1,7 +1,7 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 #home {
-    --first-color: #674ea7;
-    --second-color: #f4e767;    
+    --first-color: rgb(176, 157, 207);
+    --second-color: rgb(183, 234, 243);    
     --light-gray: lightgray;
 }
 
@@ -74,7 +74,7 @@ body {
     color: white;
 }
 header {
-    background-color: blueviolet;
+    background-color: gray;
     flex: 0 0 40px;
     color: white;
     

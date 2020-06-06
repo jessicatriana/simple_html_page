@@ -1,117 +1,148 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body id="home" class="open-left">
-    <div id="offcanvas-left" class="hide">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="home" class="open-left">
+  <div id="offcanvas-left" class="hide">
+    <ul>
+      <li><a href="#"> Item 1 </a></li>
+      <li><a href="#"> Item 2 </a></li>
+      <li><a href="#"> Item 3 </a></li>
+    </ul>
+  </div>
+  <div class="togglebar">
+    <!-- adds the class of hide to .offcanvas.left -->
+    <div class="toggle" onclick="toggleLeft()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+  <div class="center">
+    <header>
+      <nav>
         <ul>
-            <li>
-              <a href="#"> Item 1</a>
-            </li>
-            <li>
-                <a href="#"> Item 2</a>
-            </li>
-            <li>
-                <a href="#"> Item 2</a>
-            </li>
-          </ul>
-    </div>
-    <div class="togglebar">
-        <!-- adds the class of hide to .offcanvas.left -->
-        <div class="toggle" onclick="toggleLeft()">
-            <i class="fa fa-bars"></i>
-        </div>
-    </div>
-    <div class="center">
-        <header>
-            <nav>
-          <ul>
-            <li>
-              <a href="#"> Item 1</a>
-            </li>
-            <li>
-                <a href="#"> Item 2</a>
-            </li>
-            <li>
-                <a href="#"> Item 2</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section>
-        <main>
-          <article>
-            <figure class="hero">
-              <img
-                src="https://jessicatrianawebsite.s3.us-east-2.amazonaws.com/grandteton3.jpg"
-                alt="A laptop with a mouse on a desk and a pair of glasses"
-              />
-              <figcaption>
-                <h1>Jessica Triana</h1>
-              </figcaption>
-            </figure>
-           <h2 style="font-size: 3em">Learn more about me</h2>
-            <hr>
-            <p><b>Budding Programmer</b>, <strong>Software Engineer</strong>, <b>Front End Developer</b> and <mark><q>lifelong learner</q></mark>. 
-                <blockquote>"Every day is a chance to know more."</blockquote></p>
-            <table class="styled">
-                <tr>
-                    <th colspan="3">Table Header</th>
-          
-                </tr>
-                <tr>
-                    <td rowspan="3">Table Data</td>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-            </table>
-            
-            
-                <code>
-                <!-- Prints in-line code -->
-                let i;
-                i = 3;
-            </code>
-            <!-- PRE Stands for pre-formatting -->
-<!-- It picks up on the tabs, so move your code where you want it -->
-            <pre>
-let i;
-i = 3;
-i++; // i = 4 
-            </pre>
-                <div class="responsive-vid">
-              <iframe
-                width="600"
-                height="350"
-                src="https://jessica-triana-portfolio.herokuapp.com/"
-              ></iframe>
-            </div>
-            <div class="responsive-vid">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/bj5h3jA2-dg"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </article>
-        </main>
-      </section>
-      <footer></footer>
+          <li><a href="#"> Item 1 </a></li>
+          <li><a href="#"> Item 2 </a></li>
+          <li><a href="#"> Item 3 </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <main>
+        <article>
+          <figure class="hero">
+            <img src="https://picsum.photos/1200/440/?image=201"
+              alt="A laptop with a mouse on a desk and a pair of glasses." />
+            <figcaption>
+              <h1>Jessica Triana</h1>
+            </figcaption>
+          </figure>
+          <h2 style="font-size: 2em">Learn more about me</h2>
+          <hr>
+          <p><b>Budding Programmer</b>, <strong>Software Engineer</strong>, <b>Front End Developer</b> and
+            <mark><q>lifelong learner</q></mark>.
+          <blockquote>"Every day is a chance to know more."</blockquote>
+          </p>
+          <!-- Tables-->
+          <table class="styled">
+            <colgroup>
+              <col style="background-color: rgb(176, 157, 207);">
+            </colgroup>
+            <colgroup>
+              <col style="background-color: whitesmoke;" span="2">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Johnny.doe@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>i_heart_johnny@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+          <code>
+                          <!-- Prints in-line code -->
+                          let i;
+                          i = 3;
+                      </code>
+          <!-- PRE Stands for pre-formatting -->
+          <!-- It picks up on the tabs, so move your code where you want it -->
+          <pre>
+          let i;
+          i = 3;
+          i++; // i = 4 
+                      </pre>
+          <div class="responsive-vid">
+            <iframe width="600" height="350" src="https://jessica-triana-portfolio.herokuapp.com/"></iframe>
+          </div>
+          <div class="responsive-vid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bj5h3jA2-dg" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <section>
+          <table class="styled">
+            <tr>
+              <th colspan="2">Working Hours</th>
+            </tr>
+            <tr>
+              <td>mon-fri</td>
+              <td>7am-6pm</td>
+            </tr>
+            <tr>
+              <td>sat-sun</td>
+              <td>closed</td>
+            </tr>
+          </table>
+          <table class="styled">
+            <tr>
+              <th colspan="2">Contact Info</th>
+            </tr>
+            <tr>
+              <td>Cell:</td>
+              <td>123.345.6789</td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td>info@learninghtml.com</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <form action="/action_page.php">
+            <legend><b>Contact Us</b></legend>
+            <input type="text" name="fullname" placeholder="Full name">
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="msg" placeholder="Write message here"></textarea>
+            <input type="submit" value="Submit">
+            <!-- https://www.w3schools.com/tags/tag_form.asp -->
+          </form>
+        </section>
+      </footer>
     </section>
-    <script type="text/javascript" src="index.js"></script>
-  </body>
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>
+
+<!-- Bonus Materials -->
+<!-- Learn html vocab: http://apps.workflower.fi/vocabs/html/en -->
+<!-- More info about tables: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table -->
