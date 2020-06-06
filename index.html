@@ -10,9 +10,10 @@
 <body id="home" class="open-left">
   <div id="offcanvas-left" class="hide">
     <ul>
-      <li><a href="#"> Item 1 </a></li>
-      <li><a href="#"> Item 2 </a></li>
-      <li><a href="#"> Item 3 </a></li>
+      <li><a href="#top"> Top </a></li>
+      <li><a href="#quote"> Quote </a></li>
+      <li><a href="#contact"> Contact Me </a></li>
+      <li><a href="next.html"> Next Page </a></li>
     </ul>
   </div>
   <div class="togglebar">
@@ -25,14 +26,15 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#"> Item 1 </a></li>
-          <li><a href="#"> Item 2 </a></li>
-          <li><a href="#"> Item 3 </a></li>
+          <li><a href="#top"> Top </a></li>
+          <li><a href="#quote"> Quote </a></li>
+          <li><a href="#contact"> Contact Me </a></li>
+          <li><a href="next.html"> Next Page </a></li>
         </ul>
       </nav>
     </header>
     <section>
-      <main>
+      <main id="top">
         <article>
           <figure class="hero">
             <img src="https://picsum.photos/1200/440/?image=201"
@@ -45,7 +47,7 @@
           <hr>
           <p><b>Budding Programmer</b>, <strong>Software Engineer</strong>, <b>Front End Developer</b> and
             <mark><q>lifelong learner</q></mark>.
-          <blockquote>"Every day is a chance to know more."</blockquote>
+          <blockquote id="quote">"Every day is a chance to know more."</blockquote>
           </p>
           <!-- Tables-->
           <table class="styled">
@@ -126,7 +128,7 @@
           </table>
         </section>
         <section>
-          <form action="/action_page.php">
+          <form action="/action_page.php" id="contact">
             <legend><b>Contact Us</b></legend>
             <input type="text" name="fullname" placeholder="Full name">
             <input type="text" name="email" placeholder="Email">
